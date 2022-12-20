@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.unab.mobiliario.Models.Cliente;
 import com.unab.mobiliario.Services.ClienteService;
 
-@RestController
+@RestController 
 @RequestMapping ("/cliente")
 public class ClienteController {
 

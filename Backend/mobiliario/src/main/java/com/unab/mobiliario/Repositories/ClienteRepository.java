@@ -26,14 +26,14 @@ public class ClienteRepository {
     }
 
     //Función para buscar por nombres
-    public Optional<Cliente> getClienteByName (String nombres){
-        return clienteCrudRepository.findByName(nombres);
-    }
+   // public Optional<Cliente> getClienteByName (String nombres){
+     //   return clienteCrudRepository.findByName(nombres);
+    //}
 
     //Función para buscar por Apellidos
-    public Optional<Cliente> getClienteByLastname (String apellidos){
-        return clienteCrudRepository.findByLastname(apellidos);
-    }
+   // public Optional<Cliente> getClienteByLastname (String apellidos){
+    //    return clienteCrudRepository.findByLastname(apellidos);
+    //}
 
     //Función para guardar 
     public Cliente save(Cliente cliente){

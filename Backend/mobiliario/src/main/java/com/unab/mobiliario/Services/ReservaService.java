@@ -1,6 +1,6 @@
 package com.unab.mobiliario.Services;
 
-import java.util.Date;
+//import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -27,14 +27,14 @@ public class ReservaService {
     }
 
     // Traer reservas por fecha
-    public Optional<Reserva> getReservaByFecha(Date fechaReserva) {
-        return reservaRepository.getAllByDatesR(fechaReserva);
-    }
+    //public Optional<Reserva> getReservaByFecha(Date fechaReserva) {
+     //   return reservaRepository.getAllByDatesR(fechaReserva);
+    //}
 
      // Traer devoluciones por fecha
-    public Optional<Reserva> getDevolucionesByFecha(Date fechaDevolucion) {
-        return reservaRepository.getAllByDatesD(fechaDevolucion);
-    }
+    //public Optional<Reserva> getDevolucionesByFecha(Date fechaDevolucion) {
+       // return reservaRepository.getAllByDatesD(fechaDevolucion);
+    //}
 
     // Guardar
     public Reserva insertReserva(Reserva reserva) {

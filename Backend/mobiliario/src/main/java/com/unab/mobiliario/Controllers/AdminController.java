@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.unab.mobiliario.Models.Admin;
 import com.unab.mobiliario.Services.AdminService;
 
-@RestController
+@RestController 
 @RequestMapping ("/admin")
 public class AdminController {
     

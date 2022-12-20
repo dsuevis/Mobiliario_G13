@@ -26,9 +26,9 @@ public class MobiliarioRepository {
     }
 
     //Función para buscar por nombres
-    public Optional<Mobiliario> getMobiliarioByName (String nombre){
-        return mobiliarioCrudRepository.findByName(nombre);
-    }
+    //public Optional<Mobiliario> getMobiliarioByName (String nombre){
+     //   return mobiliarioCrudRepository.findByName(nombre);
+    //}
 
     //Función para guardar 
     public Mobiliario save(Mobiliario mobiliario){

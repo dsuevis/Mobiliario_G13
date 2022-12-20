@@ -4,13 +4,15 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.unab.mobiliario.Models.Admin;
 import com.unab.mobiliario.Repositories.AdminRepository;
 
+@Service
 public class AdminService {
 
-    @Autowired
+    @Autowired 
     private AdminRepository adminRepository;
 
     // Traer todas los administradores
@@ -24,9 +26,9 @@ public class AdminService {
     }
 
     // Traer por nombre
-    public Optional<Admin> getAdminByNombre(String nombre) {
-        return adminRepository.getAdminByName(nombre);
-    }
+    //public Optional<Admin> getAdminByNombre(String adminNombres) {
+     //   return adminRepository.getAdminByName(adminNombres);
+    //}
 
     // Guardar
     public Admin insertAdmin(Admin admin) {

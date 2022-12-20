@@ -9,8 +9,9 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-@Repository
+@Repository 
 public class AdminRepository {
+
     @Autowired
     private AdminCrudRepository adminCrudRepository;
 
@@ -25,14 +26,14 @@ public class AdminRepository {
     }
 
     //Función para buscar por nombres
-    public Optional<Admin> getAdminByName (String nombres){
-        return adminCrudRepository.findByName(nombres);
-    }
+    //public Optional<Admin> getAdminByName (String adminNombres){
+    // return adminCrudRepository.findByName(adminNombres);
+   //}
 
     //Función para buscar por Apellidos
-    public Optional<Admin> getAdminByLastname (String apellidos){
-        return adminCrudRepository.findByLastname(apellidos);
-    }
+  // public Optional<Admin> getAdminByLastname (String adminApellidos){
+      // return adminCrudRepository.findByLastname(adminApellidos);
+   // }
 
     //Función para guardar 
     public Admin save(Admin admin){

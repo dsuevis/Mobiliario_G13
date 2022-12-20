@@ -28,9 +28,9 @@ public class CategoriaService {
     }
 
     //Traer por nombre
-    public Optional<Categoria> getCategoriaByNombre(String nombre){
-        return categoriaRepository.getCategoriaByName (nombre);
-    }
+    //public Optional<Categoria> getCategoriaByNombre(String nombre){
+     //   return categoriaRepository.getCategoriaByName (nombre);
+    //}
 
     //Guardar
     public Categoria insertCategoria(Categoria categoria){

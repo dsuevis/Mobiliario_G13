@@ -28,9 +28,9 @@ public class ClienteService {
     }
 
     // Traer por nombre
-    public Optional<Cliente> getClienteByNombre(String nombres) {
-        return clienteRepository.getClienteByName(nombres);
-    }
+    //public Optional<Cliente> getClienteByNombre(String nombres) {
+       // return clienteRepository.getClienteByName(nombres);
+    //}
 
     // Guardar
     public Cliente insertCliente(Cliente cliente) {

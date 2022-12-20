@@ -28,9 +28,9 @@ public class MobiliarioService {
     }
 
     //Traer por nombre
-    public Optional<Mobiliario> getMobiliarioByNombre(String nombre){
-        return mobiliarioRepository.getMobiliarioByName (nombre);
-    }
+    //public Optional<Mobiliario> getMobiliarioByNombre(String nombre){
+    //    return mobiliarioRepository.getMobiliarioByName (nombre);
+    //}
 
     //Guardar
     public Mobiliario insertMobiliario(Mobiliario mobiliario){
@@ -58,8 +58,8 @@ public class MobiliarioService {
                     temp.get().setPrecio( mobiliario.getPrecio());
                 if(mobiliario.getColor() != null)
                     temp.get().setColor( mobiliario.getColor());
-                if(mobiliario.getCategoria() != null)
-                    temp.get().setCategoria( mobiliario.getCategoria());
+                //if(mobiliario.getCategoria() != null)
+                  //  temp.get().setCategoria( mobiliario.getCategoria());
                 if(mobiliario.getNEjemplares() != null)
                     temp.get().setNEjemplares( mobiliario.getNEjemplares());
                 return mobiliarioRepository.save(temp.get());

@@ -26,9 +26,9 @@ public class CategoriaRepository {
     }
 
     //Función para buscar por nombre
-    public Optional<Categoria> getCategoriaByName (String nombre){
-        return categoriaCrudRepository.findByName(nombre);
-    }
+    //public Optional<Categoria> getCategoriaByName (String nombre){
+     //   return categoriaCrudRepository.findByName(nombre);
+    //}
 
     //Función para guardar 
     public Categoria save(Categoria categoria){

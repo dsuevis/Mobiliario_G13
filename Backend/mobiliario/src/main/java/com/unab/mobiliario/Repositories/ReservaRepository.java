@@ -1,6 +1,6 @@
 package com.unab.mobiliario.Repositories;
 
-import java.util.Date;
+//import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -27,14 +27,14 @@ public class ReservaRepository  {
     }
 
     //Función para buscar una reserva por fecha
-    public Optional<Reserva> getAllByDatesR(Date fechaReserva){
-        return reservaCrudRepository.findByFechaR(fechaReserva);
-    }
+    //public Optional<Reserva> getAllByDatesR(Date fechaReserva){
+    //    return reservaCrudRepository.findByFechaR(fechaReserva);
+    //}
 
     //Función para buscar una devolución por fecha
-    public Optional<Reserva> getAllByDatesD (Date fechaDevolucion){
-        return reservaCrudRepository.findByFechaD(fechaDevolucion);
-    }   
+    //public Optional<Reserva> getAllByDatesD (Date fechaDevolucion){
+       // return reservaCrudRepository.findByFechaD(fechaDevolucion);
+    //}   
 
     //Función para guardar 
     public Reserva save(Reserva reserva){
