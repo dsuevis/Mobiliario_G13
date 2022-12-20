@@ -33,7 +33,7 @@ public class Mobiliario implements Serializable {
     @Column(name="marca")
     private String marca;
     @Column(name="precio")
-    private float precio;
+    private Integer precio;
     @Column(name="color")
     private String color;
     @Column(name="nEjemplares")

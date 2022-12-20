@@ -20,7 +20,7 @@ public class AdminRepository {
     }
 
     //Función para buscar por código
-    public Optional<Admin> getCliente (int idAdmin){
+    public Optional<Admin> getAdmin (int idAdmin){
         return adminCrudRepository.findById(idAdmin);
     }
 

@@ -15,7 +15,7 @@ public class CategoriaRepository {
     @Autowired
     private CategoriaCrudRepository categoriaCrudRepository;
 
-        //Función para traer todos los mobiliarios
+    //Función para traer todas las categorias
     public List<Categoria> getAll(){
         return (List<Categoria>) categoriaCrudRepository.findAll();        
     }
