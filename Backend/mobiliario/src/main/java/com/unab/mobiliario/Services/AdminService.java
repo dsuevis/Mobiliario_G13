@@ -14,7 +14,7 @@ public class AdminService {
     private AdminRepository adminRepository;
 
     // Traer todas los administradores
-    public List<Admin> getAll() {
+    public List<Admin> getAllAdmin() {
         return adminRepository.getAll();
     }
 

@@ -33,7 +33,7 @@ public class CategoriaService {
     }
 
     //Guardar
-    public Categoria insertCatgoria(Categoria categoria){
+    public Categoria insertCategoria(Categoria categoria){
         if(categoria.getIdCategoria() == null)
             //Campos obligatorios
             if(categoria.getDescripcion() !=null && categoria.getNombre() !=null)

@@ -17,7 +17,7 @@ public class ReservaService {
     private ReservaRepository reservaRepository;
 
         // Traer todas las reservas
-    public List<Reserva> getAll() {
+    public List<Reserva> getAllReserva() {
         return reservaRepository.getAll();
     }
 

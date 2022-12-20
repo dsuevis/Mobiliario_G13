@@ -18,7 +18,7 @@ public class ClienteService {
     private ClienteRepository clienteRepository;
 
     // Traer todos los clientes
-    public List<Cliente> getAll() {
+    public List<Cliente> getAllCliente() {
         return clienteRepository.getAll();
     }
 

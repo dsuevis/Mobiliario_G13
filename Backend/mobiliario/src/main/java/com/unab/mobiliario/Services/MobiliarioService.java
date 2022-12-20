@@ -45,7 +45,7 @@ public class MobiliarioService {
     }
 
     //Actualizar
-    public Mobiliario updateCategoria (Mobiliario  mobiliario) {
+    public Mobiliario updateMobiliario (Mobiliario  mobiliario) {
         if( mobiliario.getIdMobiliario() != null){
             //verificación de que el id exista en base de datos
             Optional<Mobiliario> temp = mobiliarioRepository.getMobiliario( mobiliario.getIdMobiliario() );
