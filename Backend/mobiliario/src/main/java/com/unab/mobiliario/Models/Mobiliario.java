@@ -11,8 +11,8 @@ import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+//import javax.persistence.JoinColumn;
+//import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
 import lombok.Getter;
@@ -33,17 +33,19 @@ public class Mobiliario implements Serializable {
     @Column(name="marca")
     private String marca;
     @Column(name="precio")
-    private float precio;
+    private Integer precio;
     @Column(name="color")
     private String color;
+    @Column(name="idCategoria")
+    private String idCategoria;
     @Column(name="nEjemplares")
     private Integer nEjemplares;
 
     //Relaciones
-    @ManyToOne
-    @JoinColumn(name="idCategoria")
-    @JsonIgnoreProperties("mobiliarios")
-    private Categoria Categoria;
+    //@ManyToOne 
+    //@JoinColumn(name="idCategoria")
+    //@JsonIgnoreProperties("mobiliarios")
+    //private Categoria Categoria; 
 
     @OneToMany(cascade={CascadeType.PERSIST}, mappedBy="mobiliario")
     @JsonIgnoreProperties("mobiliario")

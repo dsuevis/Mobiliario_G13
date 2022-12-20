@@ -24,8 +24,6 @@ public class Reserva implements Serializable {
     @Id
     @Column(name="idReserva")
     private Integer idReserva;
-    @Column(name="fechaReserva")
-    private Date fechaReserva;
     @Column(name="fechaRecogida")
     private Date fechaRecogida;
     @Column(name="fechaDevolución")
