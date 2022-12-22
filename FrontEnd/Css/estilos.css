@@ -1,0 +1,25 @@
+main > .container {
+    padding: 30px 0;
+}
+
+img {
+    max-width: 300px;
+    max-height: 300px;
+    height: auto;
+    width: auto; /* Bug de ie8 */
+   }
+
+   .boxs {
+    width:30px;
+    height:30px;
+    }
+
+    input[type=checkbox]
+{
+  /* Doble-tamaño Checkboxes */
+  -ms-transform: scale(1.1); /* IE */
+  -moz-transform: scale(1.1); /* FF */
+  -webkit-transform: scale(1.1); /* Safari y Chrome */
+  -o-transform: scale(1.1); /* Opera */
+  padding: 10px;
+}
