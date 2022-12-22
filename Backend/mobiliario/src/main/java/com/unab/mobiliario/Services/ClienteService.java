@@ -34,15 +34,20 @@ public class ClienteService {
 
     // Guardar
     public Cliente insertCliente(Cliente cliente) {
+        System.out.println(cliente.getNombres()+" "+ cliente.getApellidos()+" "+ cliente.getEmail()+ " "+cliente.getPassword());
         if (cliente.getIdCliente() == null)
             // Campos obligatorios
             if (cliente.getNombres() != null && cliente.getApellidos() != null && cliente.getEmail() != null
                     && cliente.getPassword() != null)
                 return clienteRepository.save(cliente);
-            else
-                return cliente;
-        else
+            else{
+                System.out.println("no paso validacion de datos");
+                return cliente;}
+            
+        else{
+            System.out.println("No encontró id");
             return cliente;
+        }
     }
 
     // Actualizar
